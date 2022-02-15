@@ -39,31 +39,18 @@
             
         }
 
-        form {
-            font-size: 2em;
-            font-weight: bold;
-            padding: 20px;
-            padding-top: 30px;
+        div > p {
+            font-size: 1.8em;
         }
 
-        input[type="number"] {
-            width: 300px;
-            height: 30px;
-            font-size: 0.8em;
+        #num {
+            font-size: 0.6em;
         }
 
-        #contar {
+        #tabuada {
+            margin-left: 8px;
+            height: 40px;
             width: 100px;
-            height: 30px;
-            font-weight: bold;
-            font-size: 00.8em;
-            margin-left: 18px;
-        }
-        
-        p {
-            font-size: 1.9em;
-            padding: 10px;
-            margin-top: 15px;
         }
 
         footer > p {
@@ -78,23 +65,17 @@
     
 </head>
 <body>
-    <h1>Vamos contar</h1>
+    <h1>Tabuada</h1>
     <div>
-        <form>
-            <label for="number">Início: </label>
-            <input type="number" id="txti">
-        </form>
-        <form>
-            <label for="number">Fim: </label>
-            <input type="number" id="txtf">
-        </form>
-        <form>
-            <label for="number" >Passo: </label>
-            <input type="number" id="txtp">
-        </form>
-        <input type="button" id="contar" value="Contar" onclick="contar()">
-        <p id="res">Preparando a contagem...</p>
+        <p>Número: <input type="number" name="num" id="num"><input type="button" value="Gerar tabuada" id="tabuada" onclick="fazerTabu()"></p>
+        <select name="tabuada" id="seltab" size="10">
+            <option>Digite um número acima</option>
+        </select>
+        
     </div>
+   
+        
+    
         
     <footer>
         <p>&copy;CursoemVideo</p>
