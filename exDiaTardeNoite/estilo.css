@@ -27,3 +27,14 @@ div {
     text-align: center;
     padding: 8px;
 }
+
+@media (max-width: 450px) {
+    section {
+        width: 300px;
+    }
+
+    #msg {
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+}
